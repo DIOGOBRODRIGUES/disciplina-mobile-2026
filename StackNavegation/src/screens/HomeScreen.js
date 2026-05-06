@@ -7,7 +7,7 @@ export default function HomeScreen({ navigation }) {
       <Text style={styles.title}>Painel de Controle 📊</Text>
       <Button
         title="Ver Detalhes do Relatório"
-        onPress={() => navigation.navigate('Details')}
+        onPress={() => navigation.navigate('Details', { id: 123, nome: 'Relatório de Vendas'  })}
       />
     </View>
   );
